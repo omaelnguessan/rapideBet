@@ -1,0 +1,31 @@
+ <div class="custom-cursor"></div>
+ <!--  header-section start  -->
+ <header class="header-section">
+     <div class="header-bottom">
+         <div class="container">
+             <nav class="navbar navbar-expand-lg">
+                 <a class="site-logo site-title" href="index.html">RAPIDBET</a>
+                 <button class="navbar-toggler" type="button" data-toggle="collapse"
+                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                     aria-label="Toggle navigation">
+                     <span class="menu-toggle"></span>
+                 </button>
+                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                     <ul class="navbar-nav main-menu ml-auto">
+                         <li class="active"><a href="{% url 'home' %}">Accueil</a></li>
+                         <li><a href="{% url 'parier' %}">Parier</a></li>
+                         <li><a href="{% url 'score' %}">Results</a></li>
+                         <li class="menu_has_children"><a href="#0">Compte</a>
+                             <ul class="sub-menu">
+                                 <li><a href="{% url 'login' %}">Login</a></li>
+                                 <li><a href="{% url 'register' %}">Registration</a></li>
+                             </ul>
+                         </li>
+                         <li><a href="{% url 'contact' %}">contact</a></li>
+                     </ul>
+                 </div>
+             </nav>
+         </div>
+     </div><!-- header-bottom end -->
+ </header>
+ <!--  header-section end  -->

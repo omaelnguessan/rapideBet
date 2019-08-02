@@ -1,0 +1,63 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="shortcut icon" type="image/png" href="{% static 'images/favicon.jpg' %}" />
+    <title>RAPIDBET {{ name }}</title>
+    <!-- fontawesome css link -->
+    <link rel="stylesheet" href="{% static 'css/fontawesome.min.css' %}">
+    <!-- flat icon css link -->
+    <link rel="stylesheet" href="{% static 'css/flaticon.css'%}">
+    <!-- bootstrap css link -->
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css'%}">
+    <!-- animate css link -->
+    <link rel="stylesheet" href="{% static 'css/animate.css'%}">
+    <!-- slick slider css link -->
+    <link rel="stylesheet" href="{% static 'css/slick.css'%}">
+    <!-- lightcase css link -->
+    <link rel="stylesheet" href="{% static 'css/lightcase.css'%}">
+    <!-- main style css link -->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <!-- responsive css file -->
+    <link rel="stylesheet" href="{% static 'css/responsive.css'%}" >
+</head>
+<body>
+
+    <!-- preloader start -->
+    <div id="preloader"></div>
+    <!-- preloader end -->
+    {% include './_partials/header.html' %}
+    {% block content %}
+        
+    {% endblock content %}
+
+    {% include './_partials/footer.html' %}
+
+<!-- scroll-to-top start -->
+<div class="scroll-to-top">
+    <span class="scroll-icon">
+        <i class="fa fa-angle-up"></i>
+    </span>
+</div>
+<!-- scroll-to-top end -->
+
+<!-- main jquery library js file -->
+<script src="{% static 'js/jquery-3.3.1.min.js'%}"></script>
+<!-- bootstrap js file -->
+<script src="{% static 'js/bootstrap.min.js'%}"></script>
+<!-- slick slider js file -->
+<script src="{% static 'js/slick.min.js' %}"></script>
+<!-- lightcase js file -->
+<script src="{% static 'js/lightcase.js'%}"></script>
+<!-- wow js file -->
+<script src="{% static 'js/wow.min.js'%}"></script>
+<!-- tweenmax js file -->
+<script src="{% static 'js/TweenMax.min.js'%}"></script>
+<!-- main js file -->
+<script src="{% static 'js/main.js'%}"></script>
+</body>
+</html>

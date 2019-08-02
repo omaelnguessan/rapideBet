@@ -1,0 +1,62 @@
+{% extends '../client/base.html' %}
+{% load static %}
+
+{% block content %}
+ <!-- banner-section start -->
+  <section class="breadcum-section">
+    <div class="breadcum-area">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="breadcum-content text-center">
+              <h3 class="title">Resultats</h3>
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="{% url 'home' %}">Accueil</a></li>
+                <li class="breadcrumb-item active">Resultats</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- banner-section end -->
+
+  <!-- result-section start -->
+  <section class="result-section section-padding">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-6">
+          <div class="section-header text-center">
+            <h2 class="section-title">World Cup Result</h2>
+            <p>On insensible possession oh particular attachment at excellence in. The books arose but miles happy she.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row mt-mb-15">
+        <div class="col-lg-6">
+          <div class="result-item d-flex text-center align-items-center justify-content-center">
+            <div class="team team--left">
+              <span class="name">Uruguay</span>
+              <span class="flag"><img src="{% static 'images/flag/uruguay.jpg' %}" alt="image"></span>
+            </div>
+            <div class="result-details">
+              <p>
+                <span class="left-team-result">1</span>
+                <span class="right-team-result">3</span>
+              </p>
+              <span class="date">5, Mar</span>
+            </div>
+            <div class="team team--right">
+              <span class="name">brazil</span>
+              <span class="flag"><img src="{% static 'images/flag/brazil.jpg' %}" alt="image"></span>
+            </div>
+          </div>
+        </div><!-- result-item end -->
+      </div>
+    </div>
+  </section>
+  <!-- result-section end -->
+    
+{% endblock content %}
+    
